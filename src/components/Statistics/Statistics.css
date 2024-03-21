@@ -1,0 +1,29 @@
+.statistics {
+    margin-top: 24px
+
+}
+.statistics__title {
+    margin: 0;
+    font-family: "Navigo", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2D33;
+    margin-bottom: 20px;
+}
+.statistics__content {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 335px;
+    height: 254px;
+    border-radius: 16px;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.1);
+
+}
+.statistics__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

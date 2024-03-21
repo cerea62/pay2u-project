@@ -1,0 +1,46 @@
+.subscriptions {
+    margin-top: 24px;
+}
+
+.subscription__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscriptions__title {
+    margin: 0 0 20px 0;
+    font-family: "Navigo", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2D33;
+}
+
+.subscriptions__card {
+    width: 160px;
+    height: 150px;
+    border-radius: 16px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+.subscriptions__none {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.subscriptions__proposal {
+    font-family: 'SF-Pro Regular', 'Arial', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2D33;
+    margin-top: 0;
+    margin-bottom: 32px;
+
+}

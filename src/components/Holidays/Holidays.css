@@ -1,0 +1,45 @@
+.holidays {
+    margin-top: 24px;
+}
+
+.holidays__title {
+    margin: 0;
+    font-family: "Navigo", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2D33;
+    margin-bottom: 20px;
+}
+.holidays__link {
+    text-decoration: none;
+}
+.holidays__banner {
+    display: flex;
+    border-radius: 16px;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+
+}
+
+.holidays__bid {
+    font-family: 'SF-Pro Medium', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #2B2D33;
+
+}
+
+.holidays__promise {
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #AAABAD;
+
+}

@@ -1,0 +1,51 @@
+.planned-costs {
+    margin-top: 24px;
+    max-width: 100%;
+    border-radius: 12px;
+    background-color: #E6F6F8;
+    padding: 12px;
+    box-shadow: 0px 8px 32px 0px rgba(43, 45, 51, 0.08);
+
+}
+
+.planned-costs__cost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planned-costs__text {
+    margin: 0;
+    font-family: 'SF-Pro Regular', 'Arial', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #AAABAD;
+    width: 193px;
+
+}
+
+.planned-costs__amount {
+    margin: 0;
+    font-family: 'Navigo', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #1D1D1D;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.planned-costs__cashback {
+    margin: 8px 0 0 0;
+    font-family: 'SF-Pro Regular', 'Arial', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #008E7D;
+}

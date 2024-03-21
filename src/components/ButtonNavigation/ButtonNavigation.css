@@ -1,0 +1,11 @@
+.button-navigation {
+    background-image: url('../../images/icon-share.svg');
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}

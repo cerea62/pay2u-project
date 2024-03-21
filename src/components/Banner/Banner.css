@@ -1,0 +1,16 @@
+.banner {
+    margin-top: 44px;
+}
+
+.banner__card {
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.banner__image {
+    width: 160px;
+    height: 92px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.08);
+}

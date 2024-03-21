@@ -1,0 +1,27 @@
+.payment {
+    margin-top: 24px;
+}
+
+.payment__title {
+    margin: 0;
+    font-family: "Navigo", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2B2D33;
+    margin-bottom: 20px;
+}
+
+.payment__mounth {
+    margin: 16px 0 0 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #AAABAD;
+    ;
+
+}
