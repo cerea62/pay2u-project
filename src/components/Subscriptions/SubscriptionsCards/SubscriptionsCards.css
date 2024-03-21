@@ -1,0 +1,67 @@
+.subscriptions__card {
+    width: 160px;
+    height: 150px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0px 8px 32px 0px rgba(43, 45, 51, 0.08);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
+
+.subscription__up {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.subscription__logo {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.subscription_pay {}
+
+.subscription__cost {
+    margin: 0;
+    font-family: 'SF-Pro Medium', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #2B2D33;
+}
+
+.subscription__period {
+    margin: 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #AAABAD;
+
+}
+
+.subscription__title {
+    margin: 0;
+    font-family: 'SF-Pro Medium', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #2B2D33;
+
+}
+
+.subscription__duration {
+    margin: 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #AAABAD;
+
+}

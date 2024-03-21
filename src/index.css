@@ -6,6 +6,7 @@
 @import url(../src/components/ButtonNavigation/ButtonNavigation.css);
 @import url(../src/components/Slider/Slider.css);
 @import url(../src/components/Subscriptions/Subscriptions.css);
+@import url(../src/components/Subscriptions/SubscriptionsCards/SubscriptionsCards.css);
 @import url(../src/components/Services/Services.css);
 @import url(../src/components/PlannedCosts/PlannedCosts.css);
 @import url(../src/components/ServicesCard/ServicesCard.css);

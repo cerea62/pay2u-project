@@ -4,6 +4,8 @@ import ButtonNavigation from "../ButtonNavigation/ButtonNavigation";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
+import subscriptions from "../../utils/subscriptions";
+import SubscriptionsCards from "./SubscriptionsCards/SubscriptionsCards";
 
 const responsive = {
     mobile: {
@@ -11,25 +13,6 @@ const responsive = {
         items: 2
     }
 };
-
-const subscriptions = [
-    {
-        id: 1,
-    },
-    {
-        id: 2,
-    },
-    {
-        id: 3,
-    },
-    {
-        id: 4,
-    },
-    {
-        id: 5,
-    },
-
-]
 
 export default function Subscriptions({ isSigned }) {
 
@@ -44,8 +27,7 @@ export default function Subscriptions({ isSigned }) {
                     <Carousel responsive={responsive}
                         swipeable={true}>
                         {subscriptions.map(item => (
-                            <div key={item.id} className="subscriptions__card">
-                            </div>
+                            <SubscriptionsCards props={item} />
                         ))}
                     </Carousel>
                 ) : (

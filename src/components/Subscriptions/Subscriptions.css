@@ -19,13 +19,6 @@
     color: #2B2D33;
 }
 
-.subscriptions__card {
-    width: 160px;
-    height: 150px;
-    border-radius: 16px;
-    border: 1px solid red;
-    box-sizing: border-box;
-}
 .subscriptions__none {
     display: flex;
     flex-direction: column;
