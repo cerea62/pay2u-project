@@ -1,0 +1,84 @@
+.payment-card {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.payment-card__image {
+    width: 40px;
+    height: 40px;
+}
+
+.payment-card__name {
+    width: 164px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-card__title {
+    margin: 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: #1D1D1D;
+
+}
+
+.payment-card__date {
+    margin: 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+font-size: 15px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: #AAABAD;
+
+}
+
+.payment-card__cash {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-card__cashback {
+    margin: 0 0 4px 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: right;
+    color: #282B2E;
+
+}
+
+.payment-card__cost {
+    margin: 0 0 8px 0;
+    font-family: 'Inter Regular', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: right;
+    color: #282B2E;
+
+}
+
+.payment-card__paided {
+    margin: 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: right;
+    color: #AAABAD;
+
+
+}
+
+.payment-card__paided_type_waited {
+    color: #7DD27C;
+}

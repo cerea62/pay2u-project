@@ -1,0 +1,23 @@
+@import url(../src/vendor/normalize.css);
+@import url(../src/vendor/fonts.css);
+@import url(../src/components/App/App.css);
+@import url(../src/components/Header/Header.css);
+@import url(../src/components/Banner/Banner.css);
+@import url(../src/components/ButtonNavigation/ButtonNavigation.css);
+@import url(../src/components/Slider/Slider.css);
+@import url(../src/components/Subscriptions/Subscriptions.css);
+@import url(../src/components/Services/Services.css);
+@import url(../src/components/PlannedCosts/PlannedCosts.css);
+@import url(../src/components/ServicesCard/ServicesCard.css);
+@import url(../src/components/ServicesCardList/ServicesCardList.css);
+@import url(../src/components/Category/Category.css);
+@import url(../src/components/Category/CategoryCard/CategoryCard.css);
+@import url(../src/components/Calendar/Calendar.css);
+@import url(../src/components/ButtonSubmit/ButtonSubmit.css);
+@import url(../src/components/Holidays/Holidays.css);
+@import url(../src/components/Statistics/Statistics.css);
+@import url(../src/components/Payment/Payment.css);
+@import url(../src/components/Payment/PaymentCard/PaymentCard.css);
+@import url(../src/components/Payment/PaymentCardsList/PaymentCardsList.css);
+
+

@@ -1,0 +1,7 @@
+.category-card {
+    width: 160px;
+    height: 108px;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}

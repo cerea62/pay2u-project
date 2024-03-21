@@ -1,0 +1,22 @@
+.category {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 16px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+}
+
+.category__card {
+    width: 160px;
+    height: 108px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.categoty__image {
+    width: 160px;
+    height: 108px;
+
+}
