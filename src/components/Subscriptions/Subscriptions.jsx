@@ -5,7 +5,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
 import subscriptions from "../../utils/subscriptions";
-import SubscriptionsCards from "./SubscriptionsCards/SubscriptionsCards";
+import SubscriptionsCards from "../SubscriptionsCards/SubscriptionsCards";
 
 const responsive = {
     mobile: {
@@ -21,7 +21,8 @@ export default function Subscriptions({ isSigned }) {
             <section className="subscriptions">
                 <div className="subscription__nav">
                     <h2 className="subscriptions__title">Мои подписки</h2>
-                    <ButtonNavigation />
+                    <ButtonNavigation
+                    path={'subscribe'} />
                 </div>
                 {isSigned ? (
                     <Carousel responsive={responsive}

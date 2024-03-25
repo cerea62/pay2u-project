@@ -1,7 +1,18 @@
 .main {
     margin-top: 12px;
 }
-
+.main__up {
+    display: flex;
+    justify-content: space-between;
+}
+.main__button {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    border-radius: 10px;
+    background-size: contain;
+    background-image: url('https://e7.pngegg.com/pngimages/261/559/png-clipart-checkbox-check-mark-computer-icons-others-angle-text.png');
+}
 .main__title {
     margin: 0 0 44px 0;
     font-family: 'Navigo', Arial, Helvetica, sans-serif;

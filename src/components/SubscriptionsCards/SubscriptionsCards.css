@@ -8,7 +8,12 @@
     flex-direction: column;
     padding: 12px;
 }
+.subscriptions__card_type_big {
+    width: 335px;
+    height: 112px;
+    margin-bottom: 12px;
 
+}
 .subscription__up {
     display: flex;
     justify-content: space-between;
