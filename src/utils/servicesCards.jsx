@@ -8,25 +8,37 @@ const servicesCards = [
         id: 1,
         image: image1,
         title: 'Яндекс Музыка',
-        description: 'Персональный музыкальный мир, который воодушевляет'
+        description: 'Персональный музыкальный мир, который воодушевляет',
+        isActive: true,
+        cash: 50,
+        rating: 4.7,
     },
     {
         id: 2,
         image: image2,
         title: 'Иви',
-        description: 'Это мое кино'
+        description: 'Это мое кино',
+        isActive: true,
+        cash: 50,
+        rating: 4.1,
     },
     {
         id: 3,
         image: image3,
         title: 'Яндекс Плюс',
-        description: 'Скидки и привилегии на сервисах Яндекса'
+        description: 'Скидки и привилегии на сервисах Яндекса',
+        isActive: false,
+        cash: 50,
+        rating: 3.8,
     },
     {
         id: 4,
         image: image4,
         title: 'Okko',
-        description: 'Онлайн-кинотеатр, встречи с которым ждешь'
+        description: 'Онлайн-кинотеатр, встречи с которым ждешь',
+        isActive: false,
+        cash: 50,
+        rating: 2.5,
     },
 ]
  export default servicesCards;

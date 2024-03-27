@@ -1,5 +1,6 @@
 import React from "react";
 import './Subscriptions.css'
+import { useSelector } from "react-redux";
 import ButtonNavigation from "../ButtonNavigation/ButtonNavigation";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -14,8 +15,8 @@ const responsive = {
     }
 };
 
-export default function Subscriptions({ isSigned }) {
-
+export default function Subscriptions() {
+    const isSigned = useSelector((state) => state.isSigned);
     return (
         <>
             <section className="subscriptions">
@@ -28,7 +29,14 @@ export default function Subscriptions({ isSigned }) {
                     <Carousel responsive={responsive}
                         swipeable={true}>
                         {subscriptions.map(item => (
-                            <SubscriptionsCards props={item} />
+                            <SubscriptionsCards 
+                            id={item.id}
+                            cost={item.cost}
+                            logo={item.logo}
+                            period={item.period}
+                            title={item.title}
+                            duration={item.duration}
+                             />
                         ))}
                     </Carousel>
                 ) : (

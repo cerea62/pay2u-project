@@ -1,10 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './Subscribe.css'
 import ButtonSubmit from '../ButtonSubmit/ButtonSubmit';
 import SubscriptionsCards from '../SubscriptionsCards/SubscriptionsCards';
 import subscriptions from "../../utils/subscriptions";
 
-function Subscribe({ isSigned }) {
+function Subscribe() {
+    const isSigned = useSelector((state) => state.isSigned);
     return (
         <>
             <section className='subscripe'>
@@ -13,7 +15,13 @@ function Subscribe({ isSigned }) {
                 {isSigned ?
                     (<ul className='subscripe__list'>
                         {subscriptions.map(item => (
-                            <SubscriptionsCards props={item} />
+                            <SubscriptionsCards
+                                id={item.id}
+                                cost={item.cost}
+                                logo={item.logo}
+                                period={item.period}
+                                title={item.title}
+                                duration={item.duration} />
                         ))}
                     </ul>) :
                     (<p className='subscripe__text'>У вас пока нет подписок.

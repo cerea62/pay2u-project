@@ -8,6 +8,9 @@ background-color: transparent !important;
     height: 150px !important;
 
 }
+.react-multiple-carousel__item {
+    width: 160px !important;
+}
 .slider {
     height: 100%;
 }

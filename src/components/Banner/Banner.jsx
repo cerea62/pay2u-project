@@ -1,9 +1,11 @@
 import React from "react";
+import {useSelector } from "react-redux";
 import './Banner';
 import PlannedCosts from "../PlannedCosts/PlannedCosts";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import { cardsOfSignedUser, cardsOfUnsignedUser } from '../../utils/cards'
+import { store } from '../../store/store.jsx';
 
 const responsive = {
     mobile: {
@@ -12,7 +14,10 @@ const responsive = {
     }
 };
 //не удается добавить тени в слайдер
-export default function Banner({ isSigned }) {
+export default function Banner() {
+
+    const isSigned = useSelector((state) => state.isSigned);
+    
     const cards = isSigned ? (cardsOfSignedUser) : cardsOfUnsignedUser
     return (
         <>

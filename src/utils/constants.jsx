@@ -1,0 +1,4 @@
+const SET_COUNT_SUBSCRIBLE = 'SetCountSubscrible';
+const EDIT_IS_SIGNED = 'EDIT_IS_SIGNED'
+
+export {SET_COUNT_SUBSCRIBLE, EDIT_IS_SIGNED};

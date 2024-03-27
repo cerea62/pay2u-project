@@ -1,17 +1,22 @@
 import React from "react";
-import { useState } from "react";
+import { EDIT_IS_SIGNED } from "../../utils/constants";
 import './Main.css'
 import Banner from "../Banner/Banner";
 import Subscriptions from "../Subscriptions/Subscriptions";
 import Services from "../Services/Services";
+import {store} from '../../store/store.jsx'
 
 
 export default function Main() {
-    const [isSigned, setIsSigned] = useState(false); //заглушка для пользователя с подписками и без
     function handleClick() {
-        setIsSigned(true);
+        store.dispatch({
+            type: EDIT_IS_SIGNED,
+            playload: {
+                isSigned: true,
+            }
+        })
     }
-    console.log(isSigned);
+
     return (
         <>
             <main className="main">
@@ -20,10 +25,8 @@ export default function Main() {
                     <button className="main__button" onClick={handleClick}></button>
                 </div>
 
-                <Banner 
-                isSigned={isSigned} />
-                <Subscriptions
-                isSigned={isSigned} />
+                <Banner />
+                <Subscriptions />
                 <Services />
             </main>
         </>

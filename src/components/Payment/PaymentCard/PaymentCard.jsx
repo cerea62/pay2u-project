@@ -2,7 +2,6 @@ import React from 'react';
 import './PaymentCard.css'
 
 function PaymentCard({props}) {
-    console.log(props);
     return (
         <li className='payment-card' key={props.id}>
             <img className='payment-card__image' src={props.icon} alt='#' />

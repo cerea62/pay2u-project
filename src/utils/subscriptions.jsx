@@ -9,6 +9,7 @@ const subscriptions = [
         period: 'месяц',
         title: 'Яндекс Музыка на месяц',
         duration: '20 апреля',
+        cash: 50,
     },
     {
         id: 2,
@@ -17,6 +18,7 @@ const subscriptions = [
         period: 'год',
         title: 'Okko - домашний кинотеатр',
         duration: '15 апреля',
+        cash: 50,
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ const subscriptions = [
         period: 'месяц',
         title: 'Яндекс Музыка на месяц',
         duration: '20 апреля',
+        cash: 50,
     },
     {
         id: 4,
@@ -33,6 +36,7 @@ const subscriptions = [
         period: 'месяц',
         title: 'Яндекс Музыка на месяц',
         duration: '20 апреля',
+        cash: 50,
     },
     {
         id: 5,
@@ -41,6 +45,7 @@ const subscriptions = [
         period: 'месяц',
         title: 'Яндекс Музыка на месяц',
         duration: '20 апреля',
+        cash: 50,
     },
 
 ]

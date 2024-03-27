@@ -19,7 +19,7 @@ function Services() {
                     <li><Link to='/'
                     className={`services__button ${path === "/" && "services__button_selected"}`}>Все</Link></li>
                     <li><Link to='category' 
-                     className={`services__button ${path === "/category" && "services__button_selected"}`}>Категори</Link></li>
+                     className={`services__button ${path === "/category" && "services__button_selected"}`}>Категории</Link></li>
                 </ul>
                 {path==='/' ? (
                     <ServicesCardList />
