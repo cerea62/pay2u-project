@@ -8,6 +8,7 @@ import {store} from '../../store/store.jsx'
 
 
 export default function Main() {
+    console.log(store.getState());
     function handleClick() {
         store.dispatch({
             type: EDIT_IS_SIGNED,

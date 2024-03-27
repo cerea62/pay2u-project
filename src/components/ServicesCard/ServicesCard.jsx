@@ -17,7 +17,6 @@ function ServicesCard({ id, path, image, title, description, isActive, cash, rat
             modificator = 'red'
         }
     }
-    console.log(modificator)
 
     const classNameRating = "services-card__rating services-card__rating_" + modificator;
     return (

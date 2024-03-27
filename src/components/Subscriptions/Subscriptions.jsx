@@ -7,13 +7,17 @@ import 'react-multi-carousel/lib/styles.css';
 import ButtonSubmit from "../ButtonSubmit/ButtonSubmit";
 import subscriptions from "../../utils/subscriptions";
 import SubscriptionsCards from "../SubscriptionsCards/SubscriptionsCards";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import { FreeMode } from 'swiper/modules';
 
-const responsive = {
-    mobile: {
-        breakpoint: { max: 700, min: 0 },
-        items: 2
-    }
-};
+// const responsive = {
+//     mobile: {
+//         breakpoint: { max: 700, min: 0 },
+//         items: 2
+//     }
+// };
 
 export default function Subscriptions() {
     const isSigned = useSelector((state) => state.isSigned);
@@ -23,22 +27,44 @@ export default function Subscriptions() {
                 <div className="subscription__nav">
                     <h2 className="subscriptions__title">Мои подписки</h2>
                     <ButtonNavigation
-                    path={'subscribe'} />
+                        path={'subscribe'} />
                 </div>
                 {isSigned ? (
-                    <Carousel responsive={responsive}
-                        swipeable={true}>
+                    // <Carousel responsive={responsive}
+                    //     swipeable={true}>
+                    //     {subscriptions.map(item => (
+                    //         <SubscriptionsCards 
+                    //         id={item.id}
+                    //         cost={item.cost}
+                    //         logo={item.logo}
+                    //         period={item.period}
+                    //         title={item.title}
+                    //         duration={item.duration}
+                    //          />
+                    //     ))}
+                    // </Carousel>
+                    <Swiper
+                        slidesPerView={2}
+                        spaceBetween={16}
+                        freeMode={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[FreeMode]}
+                        className="mySwiper"
+                    >
                         {subscriptions.map(item => (
-                            <SubscriptionsCards 
-                            id={item.id}
-                            cost={item.cost}
-                            logo={item.logo}
-                            period={item.period}
-                            title={item.title}
-                            duration={item.duration}
-                             />
+                            <SwiperSlide>
+                                <SubscriptionsCards
+                                    id={item.id}
+                                    cost={item.cost}
+                                    logo={item.logo}
+                                    period={item.period}
+                                    title={item.title}
+                                    duration={item.duration} />
+                            </SwiperSlide>
                         ))}
-                    </Carousel>
+                    </Swiper>
                 ) : (
                     <div>
                         <p className="subscriptions__proposal">Подключите подписку
