@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pay2u-project/static/css/main.1f874e90.css",
-    "main.js": "/pay2u-project/static/js/main.1480f9b1.js",
+    "main.js": "/pay2u-project/static/js/main.3b4e2be3.js",
     "static/js/453.ad83b5a4.chunk.js": "/pay2u-project/static/js/453.ad83b5a4.chunk.js",
     "static/media/SFProText-Medium.ttf": "/pay2u-project/static/media/SFProText-Medium.fc3c323b3b2bb1c643ee.ttf",
     "static/media/SFProText-Regular.ttf": "/pay2u-project/static/media/SFProText-Regular.90da7ab18293ca42e335.ttf",
@@ -39,11 +39,11 @@
     "static/media/button-back.svg": "/pay2u-project/static/media/button-back.90cbd7a9ba1af5a1e502.svg",
     "static/media/icon-share.svg": "/pay2u-project/static/media/icon-share.2b2d5dae965538eddb15.svg",
     "main.1f874e90.css.map": "/pay2u-project/static/css/main.1f874e90.css.map",
-    "main.1480f9b1.js.map": "/pay2u-project/static/js/main.1480f9b1.js.map",
+    "main.3b4e2be3.js.map": "/pay2u-project/static/js/main.3b4e2be3.js.map",
     "453.ad83b5a4.chunk.js.map": "/pay2u-project/static/js/453.ad83b5a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f874e90.css",
-    "static/js/main.1480f9b1.js"
+    "static/js/main.3b4e2be3.js"
   ]
 }
