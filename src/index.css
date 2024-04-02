@@ -4,7 +4,6 @@
 @import url(../src/components/Header/Header.css);
 @import url(../src/components/Banner/Banner.css);
 @import url(../src/components/ButtonNavigation/ButtonNavigation.css);
-@import url(../src/components/Slider/Slider.css);
 @import url(../src/components/Subscriptions/Subscriptions.css);
 @import url(../src/components/SubscriptionsCards/SubscriptionsCards.css);
 @import url(../src/components/Services/Services.css);
@@ -22,3 +21,5 @@
 @import url(../src/components/Payment/PaymentCardsList/PaymentCardsList.css);
 @import url(../src/components/Subscribe/Subscribe.css);
 @import url(../src/components/Swiper/Swiper.css);
+@import url(../src/components/InactiveSubscriptionsCard/InactiveSubscriptionsCard.css);
+@import url(../src/components/SearchForm/SearchForm.css);

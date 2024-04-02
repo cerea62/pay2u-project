@@ -1,13 +1,24 @@
 import React from 'react';
-import { Link, Outlet, useLocation  } from 'react-router-dom';
-import ButtonNavigation from '../ButtonNavigation/ButtonNavigation';
+import { useState } from 'react';
 import './Services'
+import ButtonNavigation from '../ButtonNavigation/ButtonNavigation';
 import ServicesCardList from '../ServicesCardList/ServicesCardList';
+import Category from '../Category/Category'
 
 function Services() {
+    const [isAllActive, setIsAllActive] = useState(true);
+    const [isCategoryActive, setIsCategoryActive] = useState(false)
 
-    const location = useLocation();
-    const path = location.pathname;
+    const handleAllClick = () => {
+        setIsAllActive(true);
+        setIsCategoryActive(false);
+    }
+    const handleCategoryClick = () => {
+        setIsCategoryActive(true);
+        setIsAllActive(false);
+    }
+    console.log('isAllActive :', isAllActive);
+    console.log('isCategoryActive :', isCategoryActive);
     return (
         <>
             <section className="services">
@@ -16,15 +27,17 @@ function Services() {
                     <ButtonNavigation />
                 </div>
                 < ul className='services__toolbar'>
-                    <li><Link to='/'
-                    className={`services__button ${path === "/" && "services__button_selected"}`}>Все</Link></li>
-                    <li><Link to='category' 
-                     className={`services__button ${path === "/category" && "services__button_selected"}`}>Категории</Link></li>
+                    <li>
+                        <button className={`services__button ${isAllActive ? 'services__button_selected' : ''}`}
+                            onClick={handleAllClick}>Все</button>
+                    </li>
+                    <li>
+                        <button className={`services__button ${isCategoryActive ? 'services__button_selected' : ''}`}
+                            onClick={handleCategoryClick}>Категории</button>
+                    </li>
                 </ul>
-                {path==='/' ? (
-                    <ServicesCardList />
-                ): (null)}
-                <Outlet />
+                {isAllActive ? (<ServicesCardList />) : (null)}
+                {isCategoryActive ? (<Category />) : (null)}
             </section>
         </>
     );

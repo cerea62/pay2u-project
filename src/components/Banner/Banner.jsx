@@ -6,7 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import { FreeMode } from 'swiper/modules';
-import 'react-multi-carousel/lib/styles.css';
 import { cardsOfSignedUser, cardsOfUnsignedUser } from '../../utils/cards'
 
 export default function Banner() {
@@ -17,33 +16,24 @@ export default function Banner() {
     return (
         <>
             <section className="banner">
-                {/* <Carousel responsive={responsive}
-                    swipeable={true} >
+                <Swiper
+                    slidesPerView={2}
+                    spaceBetween={16}
+                    freeMode={true}
+                    pagination={{
+                        clickable: true,
+                    }}
+                    modules={[FreeMode]}
+                    className="mySwiper"
+                >
                     {cards.map(item => (
-                        <div key={item.id} className="banner__card swiper-slide">
-                            <img className="banner__image" src={item.image} alt="#" />
-                        </div>
+                        <SwiperSlide>
+                            <div key={item.id} className="banner__card">
+                                <img className="banner__image" src={item.image} alt="#" />
+                            </div>
+                        </SwiperSlide>
                     ))}
-
-                </Carousel> */}
-            <Swiper
-                slidesPerView={2}
-                spaceBetween={16}
-                freeMode={true}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[FreeMode]}
-                className="mySwiper"
-            >
-                {cards.map(item => (
-                    <SwiperSlide>
-                        <div key={item.id} className="banner__card">
-                            <img className="banner__image" src={item.image} alt="#" />
-                        </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                </Swiper>
 
                 {isSigned ? (
                     <PlannedCosts />

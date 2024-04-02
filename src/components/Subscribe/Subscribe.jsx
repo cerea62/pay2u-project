@@ -4,6 +4,9 @@ import './Subscribe.css'
 import ButtonSubmit from '../ButtonSubmit/ButtonSubmit';
 import SubscriptionsCards from '../SubscriptionsCards/SubscriptionsCards';
 import subscriptions from "../../utils/subscriptions";
+import inactiveCards from '../../utils/inactiveCards';
+import InactiveSubscriptionsCard from '../InactiveSubscriptionsCard/InactiveSubscriptionsCard';
+import SearchForm from '../SearchForm/SearchForm';
 
 function Subscribe() {
     const isSigned = useSelector((state) => state.isSigned);
@@ -11,6 +14,10 @@ function Subscribe() {
         <>
             <section className='subscripe'>
                 <h2 className='subscripe__title'>Мои подписки</h2>
+                {isSigned ? (
+                    <SearchForm />
+                ) : (null)
+                }
                 <h3 className='subscripe__subtitle'>Подключенные</h3>
                 {isSigned ?
                     (<ul className='subscripe__list'>
@@ -42,6 +49,19 @@ function Subscribe() {
                         path={'/'} />
                 </div>
                 <h3 className='subscripe__subtitle'>Неактивные</h3>
+                {isSigned ? (
+                    <ul className='inactive-subscribe'>
+                        {inactiveCards.map(item => (
+                            <InactiveSubscriptionsCard
+                                id={item.id}
+                                title={item.title}
+                                description={item.description}
+                                logo={item.logo}
+                                cost={item.cost}
+                            />
+                        ))}
+                    </ul>
+                ) : (null)}
             </section>
 
         </>

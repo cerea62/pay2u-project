@@ -1,7 +1,8 @@
 {
-  "name": "pay2u",
+  "name": "pay2u-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://cerea62.github.io/pay2u-project/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.2",
     "@testing-library/jest-dom": "^5.17.0",
@@ -9,7 +10,6 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-multi-carousel": "^2.8.4",
     "react-redux": "^9.1.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",

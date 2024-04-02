@@ -6,6 +6,7 @@ import Main from '../Main/Main';
 import Category from '../Category/Category';
 import Calendar from '../Calendar/Calendar';
 import Subscribe from '../Subscribe/Subscribe';
+import ServicesCardList from '../ServicesCardList/ServicesCardList';
 
 function App() {
 
@@ -13,15 +14,17 @@ function App() {
     <div className="page">
       <Header />
       <Routes>
-        <Route exact path='/'
+        <Route exact path='/pay2u-project'
           element={<Main />}>
+            <Route exact path='services' element={<ServicesCardList />} />
           <Route path='category'
             element={<Category />} />
         </Route>
-        <Route path='calendar'
+        <Route path='/pay2u-project/calendar'
           element={<Calendar />} />
-        <Route path='subscribe'
-          element={<Subscribe />} />      </Routes>
+        <Route path='/pay2u-project/subscribe'
+          element={<Subscribe />} />
+      </Routes>
     </div>
   );
 }
