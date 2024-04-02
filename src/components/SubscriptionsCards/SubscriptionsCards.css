@@ -25,7 +25,12 @@
     max-width: 200px;
     margin-top: 4px;
 }
+.subscription_pay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
+}
 .subscription__up {
     display: flex;
     justify-content: space-between;

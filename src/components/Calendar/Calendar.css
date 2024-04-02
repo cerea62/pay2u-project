@@ -13,7 +13,7 @@
     text-align: left;
 }
 .calendar__img {
-margin-top: 24px;
+margin: 24px auto 0;
 box-sizing: border-box;
 padding: 15px;
 width: 335px;

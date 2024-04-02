@@ -11,9 +11,9 @@ export default function PlannedCosts() {
     return (
         <div className="planned-costs">
             <div className="planned-costs__cost">
-                <p className="planned-costs__text">Планируемые расходы&#160;в марте</p>
+                <p className="planned-costs__text">Планируемые расходы в&#160;марте</p>
                 <p className="planned-costs__amount">826 &#8381;</p>
-                {path !== '/calendar' ?
+                {path !== '/pay2u-project/calendar' ?
                     (<ButtonNavigation
                         path='calendar' />) : (null)}
             </div>

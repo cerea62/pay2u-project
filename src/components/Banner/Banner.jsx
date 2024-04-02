@@ -11,7 +11,6 @@ import { cardsOfSignedUser, cardsOfUnsignedUser } from '../../utils/cards'
 export default function Banner() {
 
     const isSigned = useSelector((state) => state.isSigned);
-    console.log(isSigned);
     const cards = isSigned ? (cardsOfSignedUser) : (cardsOfUnsignedUser)
     return (
         <>
