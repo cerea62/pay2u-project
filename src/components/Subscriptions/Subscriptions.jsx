@@ -32,8 +32,10 @@ export default function Subscriptions() {
                         modules={[FreeMode]}
                         className="mySwiper"
                     >
+                        <ul className="subscriptions__list">
                         {subscriptions.map(item => (
-                            <SwiperSlide>
+                            <SwiperSlide key={item.id}>
+                                 <li className='subscriptions__item'>
                                 <SubscriptionsCards
                                     id={item.id}
                                     cost={item.cost}
@@ -41,8 +43,10 @@ export default function Subscriptions() {
                                     period={item.period}
                                     title={item.title}
                                     duration={item.duration} />
-                            </SwiperSlide>
+                                    </li>
+                            </SwiperSlide>                          
                         ))}
+                        </ul>
                     </Swiper>
                 ) : (
                     <div>

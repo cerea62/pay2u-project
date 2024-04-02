@@ -17,8 +17,6 @@ function Services() {
         setIsCategoryActive(true);
         setIsAllActive(false);
     }
-    console.log('isAllActive :', isAllActive);
-    console.log('isCategoryActive :', isCategoryActive);
     return (
         <>
             <section className="services">

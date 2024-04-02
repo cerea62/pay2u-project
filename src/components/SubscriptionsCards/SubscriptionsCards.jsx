@@ -6,7 +6,8 @@ function SubscriptionsCards({ id, logo, cost, period, title, duration, cash }) {
     const location = useLocation();
     const path = location.pathname;
     return (
-        <li key={id} className={`subscriptions__card ${path === '/pay2u-project/subscribe' && "subscriptions__card_type_big"}`}>
+
+       <>
             <div className='subscription__up'>
                 <img className='subscription__logo' alt={title} src={logo} />
                 {path === '/pay2u-project/subscribe' ? (
@@ -28,8 +29,7 @@ function SubscriptionsCards({ id, logo, cost, period, title, duration, cash }) {
                     <p className='subscription__cashback'>Кешбек {cash}&#37;</p>
                 </div>
             )}
-
-        </li>
+        </>
     );
 }
 

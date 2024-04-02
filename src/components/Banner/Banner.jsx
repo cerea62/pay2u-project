@@ -26,8 +26,8 @@ export default function Banner() {
                     className="mySwiper"
                 >
                     {cards.map(item => (
-                        <SwiperSlide>
-                            <div key={item.id} className="banner__card">
+                        <SwiperSlide key={item.id}>
+                            <div className="banner__card">
                                 <img className="banner__image" src={item.image} alt="#" />
                             </div>
                         </SwiperSlide>
