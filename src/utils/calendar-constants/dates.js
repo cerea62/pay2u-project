@@ -34,19 +34,19 @@ const totalDatesPerMonthView = 42; // 6 rows, 7 days a week...
 
 const selectedDates = [
   {
-    date: new Date("2024-03-20"),
+    date: new Date("2024-04-20"),
     sbscrible: 'yandexMusic'
   },
   {
-    date: new Date("2024-03-16"),
+    date: new Date("2024-04-16"),
     sbscrible: 'premier'
   },
   {
-    date: new Date("2024-03-16"),
+    date: new Date("2024-04-16"),
     sbscrible: 'storytel'
   },
   {
-    date: new Date("2024-03-14"),
+    date: new Date("2024-04-14"),
     sbscrible: 'ivi'
   },
 ];
