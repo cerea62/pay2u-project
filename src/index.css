@@ -23,3 +23,6 @@
 @import url(../src/components/Swiper/Swiper.css);
 @import url(../src/components/InactiveSubscriptionsCard/InactiveSubscriptionsCard.css);
 @import url(../src/components/SearchForm/SearchForm.css);
+@import url(../src/components/PaymentCalendar/PaymentCalendar.css);
+@import url(../src/components/PaymentCalendar/CalendarHeader/CalendarHeader.css);
+@import url(../src/components/PaymentCalendar/DateIndicator/DateIndicator.css);

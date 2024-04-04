@@ -1,5 +1,5 @@
 .payment-card {
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
     display: flex;
     justify-content: space-between;

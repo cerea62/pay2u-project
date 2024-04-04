@@ -42,7 +42,8 @@ export default function Subscriptions() {
                                     logo={item.logo}
                                     period={item.period}
                                     title={item.title}
-                                    duration={item.duration} />
+                                    duration={item.duration}
+                                    cash={item.cash} />
                                     </li>
                             </SwiperSlide>                          
                         ))}

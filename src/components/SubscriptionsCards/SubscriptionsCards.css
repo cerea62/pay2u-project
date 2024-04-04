@@ -22,22 +22,25 @@
 }
 
 .subscription__content-big {
-    max-width: 200px;
+    width: 200px;
     margin-top: 4px;
 }
+
 .subscription_pay {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 
 }
+
 .subscription__up {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 12px;
+    justify-content: space-between;
     gap: 4px;
 
 }
+
 
 .subscription__logo {
     height: 40px;
@@ -46,7 +49,7 @@
 }
 
 .subscription__cashback {
-    margin: 0;
+    margin: 4px 0 0 0;
     font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -93,7 +96,7 @@
 }
 
 .subscription__duration {
-    margin: 0;
+    margin: 4px 0 0 0;
     font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 400;

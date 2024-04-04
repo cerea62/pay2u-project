@@ -23,14 +23,15 @@ function Subscribe() {
                     (<ul className='subscripe__list'>
                         {subscriptions.map(item => (
                             <li key={item.id} className='subscriptions__card subscriptions__card_type_big'>
-                            <SubscriptionsCards
-                                id={item.id}
-                                cost={item.cost}
-                                logo={item.logo}
-                                period={item.period}
-                                title={item.title}
-                                duration={item.duration} />
-                                </li>
+                                <SubscriptionsCards
+                                    id={item.id}
+                                    cost={item.cost}
+                                    logo={item.logo}
+                                    period={item.period}
+                                    title={item.title}
+                                    duration={item.duration}
+                                    cash={item.cash} />
+                            </li>
                         ))}
                     </ul>) :
                     (<p className='subscripe__text'>У вас пока нет подписок.

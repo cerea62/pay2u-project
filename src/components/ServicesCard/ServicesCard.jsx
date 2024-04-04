@@ -1,8 +1,11 @@
 import React from 'react';
+import { useSelector } from "react-redux";
 import './ServicesCard.css';
 import ButtonNavigation from '../ButtonNavigation/ButtonNavigation';
 
-function ServicesCard({ id, path, image, title, description, isActive, cash, rating }) {
+function ServicesCard({ id, image, title, description, isActive, cash, rating }) {
+
+    const isSigned = useSelector((state) => state.isSigned);
 
     let modificator;
     if (rating >= 4) {
@@ -25,7 +28,7 @@ function ServicesCard({ id, path, image, title, description, isActive, cash, rat
                 <div className='services-card__content'>
                     <div className='services-card__heading'>
                         <h3 className='services-card__title'>{title}</h3>
-                        {isActive ? (
+                        {isActive && isSigned ? (
                             <div className='services-card__marker'></div>
                         ) : (null)
                         }
