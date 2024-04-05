@@ -9,14 +9,14 @@ import Payment from '../Payment/Payment';
 function Calendar(props) {
     return (
         <>
-            <section className='calendar'>
-                <h2 className='calendar__title'>Календарь платежей</h2>
+            <main className='calendar'>
+                <h1 className='calendar__title'>Календарь платежей</h1>
                 <PlannedCosts />
                 <PaymentCalendar />
                 <Holidays />
                 <Statistics />
                 <Payment />
-            </section>
+            </main>
         </>
 
 

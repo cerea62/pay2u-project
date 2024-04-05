@@ -26,3 +26,6 @@
 @import url(../src/components/PaymentCalendar/PaymentCalendar.css);
 @import url(../src/components/PaymentCalendar/CalendarHeader/CalendarHeader.css);
 @import url(../src/components/PaymentCalendar/DateIndicator/DateIndicator.css);
+@import url(../src/components/MyHolidays/MyHolidays.css);
+@import url(../src/components/SubscriptionCatalog/SubscriptionCatalog.css);
+@import url(../src/components/ServicesToolbar/ServicesToolbar.css);

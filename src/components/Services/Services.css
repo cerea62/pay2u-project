@@ -18,30 +18,3 @@
     text-align: left;
     color: #2B2D33;
 }
-
-.services__toolbar {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    gap: 12px;
-    list-style: none;
-    padding-left: 0;
-}
-
-.services__button {
-    text-decoration: none;
-    font-family: 'SF-Pro Medium', Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;   
-    color: #AAABAD;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-}
-
-.services__button_selected {
-    color: #2B2D33;
-}

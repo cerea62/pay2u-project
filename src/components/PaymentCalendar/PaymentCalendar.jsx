@@ -22,14 +22,14 @@ function PaymentCalendar() {
   }, [selectDate]);
 
   return (
-    <div className='calendar-container'>
-      <CalendarHeader selectDate={selectDate} setSelectDate={setSelectDate}/>
+    <section className='calendar-container'>
+      <CalendarHeader selectDate={selectDate} setSelectDate={setSelectDate} />
       <DateIndicator
         activeDates={presetActiveDates.current}
         selectDate={selectDate}
         setSelectDate={setSelectDate}
       />
-    </div>
+    </section>
   );
 }
 

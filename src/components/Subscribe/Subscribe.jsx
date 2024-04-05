@@ -12,13 +12,13 @@ function Subscribe() {
     const isSigned = useSelector((state) => state.isSigned);
     return (
         <>
-            <section className='subscripe'>
-                <h2 className='subscripe__title'>Мои подписки</h2>
+            <main className='subscripe'>
+                <h1 className='subscripe__title'>Мои подписки</h1>
                 {isSigned ? (
                     <SearchForm />
                 ) : (null)
                 }
-                <h3 className='subscripe__subtitle'>Подключенные</h3>
+                <h2 className='subscripe__subtitle'>Подключенные</h2>
                 {isSigned ?
                     (<ul className='subscripe__list'>
                         {subscriptions.map(item => (
@@ -49,9 +49,9 @@ function Subscribe() {
                     <ButtonSubmit
                         modificator={'color'}
                         buttonTitle={'Перейти в каталог'}
-                        path={'/'} />
+                        path={'/pay2u-project/subscription-catalog'} />
                 </div>
-                <h3 className='subscripe__subtitle'>Неактивные</h3>
+                <h2 className='subscripe__subtitle'>Неактивные</h2>
                 {isSigned ? (
                     <ul className='inactive-subscribe'>
                         {inactiveCards.map(item => (
@@ -65,7 +65,7 @@ function Subscribe() {
                         ))}
                     </ul>
                 ) : (null)}
-            </section>
+            </main>
 
         </>
     );

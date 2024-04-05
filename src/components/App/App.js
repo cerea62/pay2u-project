@@ -5,6 +5,8 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Calendar from '../Calendar/Calendar';
 import Subscribe from '../Subscribe/Subscribe';
+import MyHolidays from '../MyHolidays/MyHolidays';
+import SubscriptionCatalog from '../SubscriptionCatalog/SubscriptionCatalog';
 
 function App() {
 
@@ -18,6 +20,10 @@ function App() {
           element={<Calendar />} />
         <Route path='/pay2u-project/subscribe'
           element={<Subscribe />} />
+          <Route path='/pay2u-project/holidays'
+          element={<MyHolidays />} />
+          <Route path='/pay2u-project/subscription-catalog'
+          element={<SubscriptionCatalog /> } />
       </Routes>
     </div>
   );

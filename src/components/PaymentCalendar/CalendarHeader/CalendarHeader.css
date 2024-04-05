@@ -29,6 +29,7 @@
   
   .next-moonth{
     background-image: url(../../../images/calendar-ico/go-right.png);
+    transform: scale(1, -1);
     background-repeat: no-repeat;
     background-size: contain;
     height: 24px;

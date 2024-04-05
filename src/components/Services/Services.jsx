@@ -1,22 +1,11 @@
 import React from 'react';
-import { useState } from 'react';
 import './Services'
 import ButtonNavigation from '../ButtonNavigation/ButtonNavigation';
-import ServicesCardList from '../ServicesCardList/ServicesCardList';
-import Category from '../Category/Category'
+import ServicesToolbar from '../ServicesToolbar/ServicesToolbar';
+
 
 function Services() {
-    const [isAllActive, setIsAllActive] = useState(true);
-    const [isCategoryActive, setIsCategoryActive] = useState(false)
 
-    const handleAllClick = () => {
-        setIsAllActive(true);
-        setIsCategoryActive(false);
-    }
-    const handleCategoryClick = () => {
-        setIsCategoryActive(true);
-        setIsAllActive(false);
-    }
     return (
         <>
             <section className="services">
@@ -24,18 +13,7 @@ function Services() {
                     <h2 className="services__title">Сервисы</h2>
                     <ButtonNavigation />
                 </div>
-                < ul className='services__toolbar'>
-                    <li>
-                        <button className={`services__button ${isAllActive ? 'services__button_selected' : ''}`}
-                            onClick={handleAllClick}>Все</button>
-                    </li>
-                    <li>
-                        <button className={`services__button ${isCategoryActive ? 'services__button_selected' : ''}`}
-                            onClick={handleCategoryClick}>Категории</button>
-                    </li>
-                </ul>
-                {isAllActive ? (<ServicesCardList />) : (null)}
-                {isCategoryActive ? (<Category />) : (null)}
+                <ServicesToolbar />
             </section>
         </>
     );

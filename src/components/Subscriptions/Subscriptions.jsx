@@ -52,7 +52,7 @@ export default function Subscriptions() {
                 ) : (
                     <div>
                         <p className="subscriptions__proposal">Подключите подписку
-                            из каталога или перенесите существующую чтобы получать кэшбек
+                            из каталога или перенесите существующую, чтобы получать кэшбек
                             и управлять своими подписками</p>
                         <div className="subscriptions__none">
                             <ButtonSubmit
@@ -63,7 +63,7 @@ export default function Subscriptions() {
                             <ButtonSubmit
                                 modificator={'color'}
                                 buttonTitle={'Перейти в каталог'}
-                                path={'/'} />
+                                path={'/pay2u-project/subscription-catalog'} />
                         </div>
                     </div>
                 )}

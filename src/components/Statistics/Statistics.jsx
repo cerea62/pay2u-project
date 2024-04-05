@@ -4,16 +4,13 @@ import image from '../../images/Statistic.png';
 
 function Statistics(props) {
     return (
-        <div className='statistics'>
+        <section className='statistics'>
             <h2 className='statistics__title'>Категории ваших подписок</h2>
             <div className='statistics__content'>
                 {/* заглушка с картинкой */}
-                <img className='statistics__image' alt="#" src={image}  /> 
-
+                <img className='statistics__image' alt="#" src={image} />
             </div>
-
-            
-        </div>
+        </section>
     );
 }
 
