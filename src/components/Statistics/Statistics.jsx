@@ -1,6 +1,6 @@
 import React from 'react';
 import './Statistics.css'
-import image from '../../images/Statistic.png';
+import image from '../../images/Statistic.jpg';
 
 function Statistics(props) {
     return (
