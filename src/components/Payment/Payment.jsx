@@ -4,12 +4,11 @@ import PaymentCardsList from './PaymentCardsList/PaymentCardsList';
 
 function Payment(props) {
     return (
-        <div className='payment'>
+        <section className='payment'>
             <h2 className='payment__title'>Оплаты</h2>
-            <p className='payment__mounth'>Март</p>
-            <PaymentCardsList />
-            
-        </div>
+            <p className='payment__mounth'>Апрель</p>
+            <PaymentCardsList />        
+        </section>
     );
 }
 

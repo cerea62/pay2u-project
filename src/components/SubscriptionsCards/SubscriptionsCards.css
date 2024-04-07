@@ -1,0 +1,107 @@
+.subscriptions__card {
+    width: 160px;
+    height: 165px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    box-shadow: 0px 1px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+.subscriptions__card_type_big {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 12px;
+
+}
+
+.subscription__content {
+    margin-top: 4px;
+
+}
+
+.subscription__content-big {
+    width: 200px;
+    margin-top: 4px;
+}
+
+.subscription_pay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.subscription__up {
+    display: flex;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    gap: 4px;
+
+}
+
+
+.subscription__logo {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+}
+
+.subscription__cashback {
+    margin: 4px 0 0 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #00809C;
+}
+
+.subscription__cost {
+    margin: 0;
+    font-family: 'SF-Pro Medium', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #2B2D33;
+}
+
+.subscription__period {
+    margin: 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #AAABAD;
+
+}
+
+.subscription__title {
+    margin: 0;
+    font-family: 'SF-Pro Medium', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+    color: #2B2D33;
+}
+
+.subscription__title_big {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.subscription__duration {
+    margin: 4px 0 0 0;
+    font-family: 'SF-Pro Regular', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #AAABAD;
+
+}

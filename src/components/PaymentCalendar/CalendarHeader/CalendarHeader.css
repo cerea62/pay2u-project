@@ -1,0 +1,38 @@
+.calendar-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+  
+  }
+  
+  .calendar-header__title {
+    font-family: 'SF Pro Text', Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 0;
+  }
+  
+  .right-container {
+    display: flex;
+  }
+  
+  .prev-moonth{
+    background-image: url(../../../images/calendar-ico/go-left.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+  }
+  
+  .next-moonth{
+    background-image: url(../../../images/calendar-ico/go-right.png);
+    transform: scale(1, -1);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+  }
+  

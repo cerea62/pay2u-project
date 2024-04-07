@@ -1,13 +1,12 @@
 import React from 'react';
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import './App.css';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
-import Category from '../Category/Category';
-import ServicesCardList from '../ServicesCardList/ServicesCardList';
 import Calendar from '../Calendar/Calendar';
-
-
+import Subscribe from '../Subscribe/Subscribe';
+import MyHolidays from '../MyHolidays/MyHolidays';
+import SubscriptionCatalog from '../SubscriptionCatalog/SubscriptionCatalog';
 
 function App() {
 
@@ -15,16 +14,16 @@ function App() {
     <div className="page">
       <Header />
       <Routes>
-        <Route path='/'
-          element={<Main />}>
-          <Route path='category'
-            element={<Category />} />
-          {/* <Route path='all' exact
-            element={<ServicesCardList />} /> */}
-        </Route>
-        <Route path='calendar'
+        <Route exact path='/pay2u-project'
+          element={<Main />} />
+        <Route path='/pay2u-project/calendar'
           element={<Calendar />} />
-
+        <Route path='/pay2u-project/subscribe'
+          element={<Subscribe />} />
+          <Route path='/pay2u-project/holidays'
+          element={<MyHolidays />} />
+          <Route path='/pay2u-project/subscription-catalog'
+          element={<SubscriptionCatalog /> } />
       </Routes>
     </div>
   );

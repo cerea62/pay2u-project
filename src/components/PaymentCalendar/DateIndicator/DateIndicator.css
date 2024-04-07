@@ -1,0 +1,83 @@
+.date-indicator {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(40px, 1fr));
+    grid-template-rows: repeat(5, minmax(40px, 1fr));
+    grid-gap: 5px;
+    padding: 0 15px;
+    position: absolute;
+    z-index: 1;
+    height: 32px;
+    width: 32px;
+    font-family: 'SF Pro Text', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    cursor: pointer;
+
+    .date-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &.selected {
+            border-radius: 8px;
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+            background-color: #E6F6F8;
+        }
+    }
+}
+
+.date-icon {
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+
+    &.active {
+        color: #00809C;
+    }
+
+    &[data-active-month='false'] {
+        color: rgba(86, 85, 85, 0.856);
+    }
+}
+
+.icon-img {
+    &.selected {
+        width: 18px;
+        height: 18px;
+        margin-left: 25px;
+        z-index: 2;
+        margin-top: 35px;
+        position: absolute;
+    }
+
+    &.yandexMusic {
+        background-image: url(../../../images/services-icons/yandex-music.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.premier {
+        background-image: url(../../../images/services-icons/icon-premier.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.storytel {
+        background-image: url(../../../images/services-icons/storytel-icon.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.ivi {
+        background-image: url(../../../images/services-icons/ivi.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.many {
+        background-image: url(../../../images/calendar-ico/many.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

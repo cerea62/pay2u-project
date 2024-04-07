@@ -7,17 +7,16 @@ export default function PlannedCosts() {
     const location = useLocation();
     const path = location.pathname;
 
-
     return (
-        <div className="planned-costs">
+        <section className="planned-costs">
             <div className="planned-costs__cost">
-                <p className="planned-costs__text">Планируемы расходы в марте</p>
-                <p className="planned-costs__amount">826&#8381;</p>
-                {path !== '/calendar' ?
+                <p className="planned-costs__text">Планируемые расходы в&#160;апреле</p>
+                <p className="planned-costs__amount">826 &#8381;</p>
+                {path !== '/pay2u-project/calendar' ?
                     (<ButtonNavigation
                         path='calendar' />) : (null)}
             </div>
-            <p className="planned-costs__cashback">168&#8381;кэшбека зачислится 23 марта </p>
-        </div>
+            <p className="planned-costs__cashback">168 &#8381; кэшбека зачислится 23 апреле </p>
+        </section>
     )
 }

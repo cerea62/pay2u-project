@@ -5,9 +5,9 @@ import image from '../../images/holidays-background.svg'
 
 function Holidays(props) {
     return (
-        <div className='holidays'>
+        <section className='holidays'>
             <h2 className='holidays__title'>Уйти на каникулы</h2>
-            <Link className='holidays__link' to='/'>
+            <Link className='holidays__link' to='/pay2u-project/holidays'>
                 <div className='holidays__banner'>
                     <div className='holidays__text'>
                         <p className='holidays__bid'>Уезжаете? Запланируйте отключение подписок </p>
@@ -17,7 +17,7 @@ function Holidays(props) {
                 </div>
             </Link>
 
-        </div>
+        </section>
     );
 }
 

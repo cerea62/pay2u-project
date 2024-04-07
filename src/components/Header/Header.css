@@ -1,6 +1,8 @@
 .header {
-
+    display: flex;
+    justify-content: space-between;
 }
+
 .header__back {
     background-image: url('../../images/button-back.svg');
     background-color: transparent;
@@ -9,4 +11,17 @@
     width: 20px;
     height: 17px;
     border: none;
+}
+
+.button {
+    font-family: 'SF-Pro Regular', 'Arial', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    height: 17px;
+    color: #6e7383;
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #c1c2c4;
+    border: none;
+    border-radius: 5px;
 }
